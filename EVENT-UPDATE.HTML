@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style src></style>
+<title>Event-update</title>
+<style>
+body
+{
+margin:10px;
+border:2px solid;
+}
+table
+{
+margin:30px;
+border:2px solid;
+}
+img
+{
+margin:5px;
+width:100%;
+border-radius:70%;
+}
+form label
+{
+margin-top:10px;
+}
+.image
+{
+border:2px solid;
+}
+.container
+{
+margin-top:50px;
+}
+.submit
+{
+margin-top:20px;
+}
+.cancel
+{
+margin-left:40px;
+}
+</style>
+</head>
+
+<body>
+<center><h1>EVENT 1<br>Number of seats avaliable:23</h1></center>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <p class='image'>
+      <img class='img-responsive' src ='menu.jpg'></p>
+    </div>
+    <div class="col-sm-6">
+       <form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" value=""><br>
+  <label for="number">phone number:</label>
+  <input type="number" id="number" name="number" value=""><br>
+  <label for="seats">number of seats:</label>
+  <select name="seats" id="seats">
+    <option value="">1</option>
+    <option value="">2</option>
+    <option value="">3</option>
+    <option value="">4</option>
+  </select>
+  <br>
+  <label for="attendee">number of attendee:</label>
+  <input type='number'id='attendee' name='attendee'><br>
+
+ </form>
+<input type="submit" class='submit' onclick='submit()' value="Submit">
+  <input type='submit' class='cancel' value='cancel'>
+    </div>
+  </div>
+</div>
+</body>
+<script>
+function submit() {
+  alert("Your form was submited");
+}
+</script>
+</html>
